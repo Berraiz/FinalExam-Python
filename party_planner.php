@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["items"])) {
     $input = implode(",", $indices); 
 
 
-    $cmd = "python3 /var/www/cgi-bin/party_planner.py";
+    $cmd = "python3 /var/www/html/party_planner.py";
 
     $descriptorspec = [
         0 => ["pipe", "r"], 
